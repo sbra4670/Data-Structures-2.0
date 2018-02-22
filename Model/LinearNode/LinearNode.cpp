@@ -11,4 +11,16 @@
 
 using namespace std;
 
-
+template <class Type>
+class LinearNode : public Node<Type>
+{
+protected:
+    LinearNode<Type> * next;
+public:
+    LinearNode();
+    LinearNode(Type data);
+    LinearNode(Type data, LinearNode<Type> * next);
+    //Methods
+    void setNextNode(LinearNode * next);
+    LinearNode<Type> * getNextNode();
+};
