@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		76633BF5203F4F050066BFBB /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76633BF4203F4F050066BFBB /* Runner.cpp */; };
+		76633BF8203F4FA30066BFBB /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76633BF6203F4FA30066BFBB /* Queue.cpp */; };
+		76633BFC203F51FF0066BFBB /* LinearNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76633BFA203F51FF0066BFBB /* LinearNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		76633BEA203F4EE80066BFBB /* QueueProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = QueueProject; sourceTree = BUILT_PRODUCTS_DIR; };
+		76633BEA203F4EE80066BFBB /* Data Structures 2.0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data Structures 2.0"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76633BF4203F4F050066BFBB /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		76633BF6203F4FA30066BFBB /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
+		76633BF7203F4FA30066BFBB /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		76633BFA203F51FF0066BFBB /* LinearNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearNode.cpp; sourceTree = "<group>"; };
+		76633BFB203F51FF0066BFBB /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 		76633BE1203F4EE80066BFBB = {
 			isa = PBXGroup;
 			children = (
+				76633BFD203F526A0066BFBB /* Model */,
 				76633BEC203F4EE80066BFBB /* QueueProject */,
 				76633BEB203F4EE80066BFBB /* Products */,
 			);
@@ -49,7 +56,7 @@
 		76633BEB203F4EE80066BFBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76633BEA203F4EE80066BFBB /* QueueProject */,
+				76633BEA203F4EE80066BFBB /* Data Structures 2.0 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,16 +65,35 @@
 			isa = PBXGroup;
 			children = (
 				76633BF4203F4F050066BFBB /* Runner.cpp */,
+				76633BF6203F4FA30066BFBB /* Queue.cpp */,
+				76633BF7203F4FA30066BFBB /* Queue.hpp */,
 			);
 			path = QueueProject;
+			sourceTree = "<group>";
+		};
+		76633BF9203F50D00066BFBB /* LinearNode */ = {
+			isa = PBXGroup;
+			children = (
+				76633BFA203F51FF0066BFBB /* LinearNode.cpp */,
+				76633BFB203F51FF0066BFBB /* LinearNode.hpp */,
+			);
+			path = LinearNode;
+			sourceTree = "<group>";
+		};
+		76633BFD203F526A0066BFBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76633BF9203F50D00066BFBB /* LinearNode */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		76633BE9203F4EE80066BFBB /* QueueProject */ = {
+		76633BE9203F4EE80066BFBB /* Data Structures 2.0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76633BF1203F4EE80066BFBB /* Build configuration list for PBXNativeTarget "QueueProject" */;
+			buildConfigurationList = 76633BF1203F4EE80066BFBB /* Build configuration list for PBXNativeTarget "Data Structures 2.0" */;
 			buildPhases = (
 				76633BE6203F4EE80066BFBB /* Sources */,
 				76633BE7203F4EE80066BFBB /* Frameworks */,
@@ -77,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = QueueProject;
+			name = "Data Structures 2.0";
 			productName = QueueProject;
-			productReference = 76633BEA203F4EE80066BFBB /* QueueProject */;
+			productReference = 76633BEA203F4EE80066BFBB /* Data Structures 2.0 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 76633BE5203F4EE80066BFBB /* Build configuration list for PBXProject "QueueProject" */;
+			buildConfigurationList = 76633BE5203F4EE80066BFBB /* Build configuration list for PBXProject "Data Structures 2.0" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76633BE9203F4EE80066BFBB /* QueueProject */,
+				76633BE9203F4EE80066BFBB /* Data Structures 2.0 */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				76633BF5203F4F050066BFBB /* Runner.cpp in Sources */,
+				76633BFC203F51FF0066BFBB /* LinearNode.cpp in Sources */,
+				76633BF8203F4FA30066BFBB /* Queue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +276,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		76633BE5203F4EE80066BFBB /* Build configuration list for PBXProject "QueueProject" */ = {
+		76633BE5203F4EE80066BFBB /* Build configuration list for PBXProject "Data Structures 2.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76633BEF203F4EE80066BFBB /* Debug */,
@@ -257,7 +285,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76633BF1203F4EE80066BFBB /* Build configuration list for PBXNativeTarget "QueueProject" */ = {
+		76633BF1203F4EE80066BFBB /* Build configuration list for PBXNativeTarget "Data Structures 2.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76633BF2203F4EE80066BFBB /* Debug */,
